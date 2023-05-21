@@ -67,3 +67,97 @@
     - Bandas e canais
     - Frequência
     - Podemos simular redes 
+#### 3 - Conteinerização com Docker
+- **Docker**
+    - Containers para isolar e otimizar aplicações e serviços, isolando-os em pequenos contextos que comunicam-se entre si.  
+- **Comandos**
+    - docker run -ti nginx --name nginx -p 8081:8081
+    - docker ps 
+    - docker -a 
+    - docker build -t nomeimagem .
+    - docker exec -ti 
+    - docker scan
+    - docker inspect 
+- **Imagens**
+    - Basicamente o app pronto para funcionar
+- **Instruções Dockerfile**
+    - FROM -> base do sistema operacional
+    - WORKDIR -> acessa diretório
+    - ENV -> adiciona variáveis de ambiente
+    - RUN -> roda comandos em tempo de execução build/construção
+    - CMD -> roda comando após o início do container, sempre
+    - ENTRYPOINT -> a prioridade máxima
+- **Imutabilidade**
+    - o que roda na minha máquina roda em qualquer lugar
+- **Volumes** 
+    - Mantermos algumas informações mesmo após os containers deixarem de existir
+- **Tipos de volumes**
+    - Docker Volue -> monta o diretório dentro do container, pasta source
+    - Docker Bind -> armazena o conteúdo, mas é limitado
+    - tmpfs -> armazena temporáriamenta, bom para recursos sensíveis
+- **Comunicação**
+    - Contexto
+- **Redes**
+    - docker possui enereçamento de IP próprio
+    - Bridge -> é o plugin default de rede, cria uma comunicação entre os constainers de forma que eles possam se comunicar dentro de ecossistemas isolados. Resolução DNS, em que podemos dar nomes.
+    - Host -> Usa a rede do host e compartilha-a, portanto, o que for válido como rede para a máquina onde o Docker está rodando, será válido.
+    - Overlay -> hosts distribuídos, comunicação segura.
+- **Ecossitema**
+    - --link
+- **Docker Compose**
+    - nos aulixia a criar stacks complets utilizando componetes como imagens, variáveis de ambiente. 
+    - docker-compose up(-d) -> sobe containers
+    - docker-compose logs -> verifica saúde e msgns
+    - docker-compose ps -> vê se está rodand
+    - docker-compose kill -> para todos os containers
+    - docker-compose rm -f -> remove containers
+- ****
+    - 
+    - 
+    - 
+- ****
+    - 
+    - 
+    - 
+- ****
+    - 
+    - 
+    - 
+- ****
+    - 
+    - 
+    - 
+- ****
+    - 
+    - 
+    - 
+- ****
+    - 
+    - 
+    - 
+- ****
+    - 
+    - 
+    - 
+- ****
+    - 
+    - 
+    - 
+- ****
+    - 
+    - 
+    - 
+- ****
+    - 
+    - 
+    - 
+- ****
+    - 
+    - 
+    - 
+- ****
+    - 
+    - 
+    - 
+
+
