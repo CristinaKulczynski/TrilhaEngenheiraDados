@@ -6,3 +6,64 @@
     - Desenvolvimento de código em colaboração com outros integrantes.
 - **O que é o Git?**
     - É  um sistema de versionamento, guarda  snapshots do estado do projeto, e o caminho.
+#### 2 - Redes e Sistemas
+- Dois ou  mais dispositivos eletrônicos conectados entre si, que trocam informações por protocolo.
+    - Conexão física via cabos
+    - Conexial ou fibra óptica
+    - Via Wireless através de rádio frequência, Bluetooth ou infravermelho
+- **NIC** 
+    - Placa de rede, responsável por permitir a conexão do computador com o cabo de rede Ethernet, ou por receber as onodas de rádio frequência.
+- **Switch**
+    - Comutação dos quadros entre os dispositivos, encaminhamento de informações.
+- **Roteador** 
+    - Tem a responsabilidade de procurar as melhores rotas na internet para entregas os pacotes do remetente ao destinatário no menor tempo possível.
+- **Modem** 
+    - É o equipamento responsável pela modulação e demodulação do sinal de Internet. 
+- **ICANN**
+    - A responsabilidade é de distribuir os endereçoes IP's e gerenciar os servidores DNS's
+- **Cabeamento**
+    - Padrões estabelecidos que definem como serão as organizações dos cabos e seus periféricos possibilitando melhor organização e performance na rede. 
+- **Cabo par trançado**
+    - UTP e STP, divididos em categorias que determinam a velocidade de tramissão de dadoes e o alcance em metros que o cabo pode suportar sem a perda de pacotes.
+    - Cabo Coaxial, composto por fios de cobre e um fio central responsável por ser o condutor do pulso elétrico,malha metálica realizndo isolamento e uma blindagem plástica contra interferências.
+- **Fibra Óptica**
+    - Composta por pedaços de vidros que permitem a propagação dos raios de luz que são convertidos por conversores nas extremidades das fibras.
+- **Rack** 
+    - É um armário para hospedar os equipamentosde hardwares como tudo citado acima e organizar as coisas.
+- **Modelo OSI**
+    - 7 camadas, respectivamente: Física, Enlace, Rede, Transporte, Sessão, Apresentação e Aplicação.
+    - Não confirma o recebimento de dados
+- **Modelo TCP/IP**
+    - 4 camadas, respectivamente: Acesso a Rede, Internet, Transporte e Aplicação. 
+    - Confirma o recebimento de dados
+- **IP Internet Protocol**
+    - Responsável pelo endereçamento dos pacotes de rede na camada 3 do modelo OSI, ou seja, responsável por gerar um endereço no compudador ou qualquer.servidor, no momento que este conecta-se à internet.
+    A tabela de classes pode determinar qual será a quantidade de hosts e de redes presentes em cada classe.
+- **IPV4**
+    - Formado de 32 bits
+- **IPV6**
+    - Formados por 128 bits
+- **Domínios, DNS e latência**
+    - Domínios raiz
+    - https:// -> protocolo
+    - www -> subdominio
+    - nome -> dominio
+    - .com -> TLD
+    - .br -> subdiretório
+    - latência pequena a velocidade é rápida
+    - latência grande causa lentidão
+    - o funcionamento do fluxo de uma resolução DNS é basicamente explicado pelo domínio raiz que encaminha para os servidores TLD's que direcionam para os servidores destinos.
+- **Comandos de configuração**
+    - ipconfig
+    - ipconfig /flushdns -> limpar cache 
+    - ping alguma.coisa -> ver se está respondendo
+    - nslookup alguma.coisa -> ver se estou indo para o lugar certo
+    - tracert alguma.coisa  -> quantos roteadores me conectei até achar o google
+    - netstat -> mapear as portas que estão sendo utilizadas no nosso computador
+- **Segurança**
+    - Física ou Lógico
+    - Utilizar SSo é importante para garantir que usuários façam logins com tokens diferente utilizando uma única senha.
+- **Wireless**
+    - Bandas e canais
+    - Frequência
+    - Podemos simular redes 
