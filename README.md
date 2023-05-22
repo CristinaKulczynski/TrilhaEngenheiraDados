@@ -111,10 +111,8 @@
     - docker-compose ps -> vê se está rodand
     - docker-compose kill -> para todos os containers
     - docker-compose rm -f -> remove containers
-- ****
-    - 
-    - 
-    - 
+- **Orquestradores**
+    - monitoramento dos containers, um cluster
 - ****
     - 
     - 
