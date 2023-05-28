@@ -1,12 +1,12 @@
 ## Trilha Engenheira de Dados 
 
-#### 1 - Git e Versionamento
+### 1 - Git e Versionamento
 - **O que é versionamento?**
     - Registo de mudanças em arquivos, que possibilida a recuperação ou o acesso de versões anteriores.
     - Desenvolvimento de código em colaboração com outros integrantes.
 - **O que é o Git?**
     - É  um sistema de versionamento, guarda  snapshots do estado do projeto, e o caminho.
-#### 2 - Redes e Sistemas
+### 2 - Redes e Sistemas
 - Dois ou  mais dispositivos eletrônicos conectados entre si, que trocam informações por protocolo.
     - Conexão física via cabos
     - Conexial ou fibra óptica
@@ -67,7 +67,7 @@
     - Bandas e canais
     - Frequência
     - Podemos simular redes 
-#### 3 - Conteinerização com Docker
+### 3 - Conteinerização com Docker
 - **Docker**
     - Containers para isolar e otimizar aplicações e serviços, isolando-os em pequenos contextos que comunicam-se entre si.  
 - **Comandos**
@@ -108,51 +108,80 @@
     - nos aulixia a criar stacks complets utilizando componetes como imagens, variáveis de ambiente. 
     - docker-compose up(-d) -> sobe containers
     - docker-compose logs -> verifica saúde e msgns
-    - docker-compose ps -> vê se está rodand
+    - docker-compose ps -> vê se está rodando
     - docker-compose kill -> para todos os containers
     - docker-compose rm -f -> remove containers
 - **Orquestradores**
     - monitoramento dos containers, um cluster
-- ****
-    - 
-    - 
-    - 
-- ****
-    - 
-    - 
-    - 
-- ****
-    - 
-    - 
-    - 
-- ****
-    - 
-    - 
-    - 
-- ****
-    - 
-    - 
-    - 
-- ****
-    - 
-    - 
-    - 
-- ****
-    - 
-    - 
-    - 
-- ****
-    - 
-    - 
-    - 
-- ****
-    - 
-    - 
-    - 
-- ****
-    - 
-    - 
-    - 
+### 4 - Banco de dados
+- **Tipos de dados e custo de armazenamento**
+    - Neste link é possíver ver todos os tipos de dados que o POstgreSQL trabalha ``https://www.postgresql.org/docs/8.1/datatype.html``
+- **Modelagem de entidades**
+    - ``https://online.visual-paradigm.com/drive/#infoart:proj=0&dashboard`` -> link para modelagem de entidades
+- **Normalização de dados**
+    - **1ª forma normal**: Cada atibuto deve conter apenas um valor correspondente em um determinado registro.
+    - **2ª forma normal**: Cada elemento da tabela deve depender apenas de sua chave primária.
+    - **3ª forma normal**: Um elemento não chave da tabela não pode tepender de outro elemento não chave.
+- **Exercícios**
+    - Considere que você está modelando uma tabela que representa as transações de cartão de crédito processadas por um sistema de meios de pagamento. Para o campo de "horário da transação”, qual tipo de dado você deve utilizar? **datatime**
+    - Considere que você está modelando uma tabela que representa as transações de cartão de crédito processadas por um sistema de meios de pagamento. Para o campo de "id”, que será chave primária da transação, qual tipo de dado é o mais adequado? **bigint** 
+    - Em um banco de dados, o estado de aprovação de um pedido de reembolso é armazenado com um campo Booleano. Sobre esse tipo de dado, assinale a alternativa correta? **1 byte** 
+    - Em um supermercado, uma tabela de marcas contém registros como Nestlé e Lacta, enquanto uma lista de produtos contém entradas como Nescau e Diamante negro. O relacionamento entre essas duas tabelas deve ser (considere o relacionamento de marca com produto, nesta ordem) **1 para N**
+    - Em um pronto socorro, cada paciente tem um médico responsável, e cada médico atende pelo menos dez pacientes num dia. Assim sendo, assinale a alternativa correta: **A tabela de médicos se relaciona com a tabela de pacientes usando a chave estrangeira id_medico, contida na tabela de pacientes.**
+- **Inserindo tabelas no banco**
+    ````sql
+    CREATE TABLE professores(
+        id_professor integer,
+        celuar varchar(14),
+        nome varchar(40),
+        id_disciplina integer,
+        primary key (id_professor),
+        foreign key (id_disciplina),
+        references disciplinas(id_disciplina)
+    )
+    ````
+- **Inserindo dados nas tabelas**
+    ````sql
+    INSERT INTO disciplinas VALUES
+    (1, 'portugues', 'literatura e gramatica');
+    ````
+    ````sql
+    INSERT INTO disciplinas VALUES
+    (2, 'matematica', 'algebra e geometria'),
+    (3, 'fisica', 'cinematica e dinamica');
+    ````
+- **Puxar dados para a tabela**
+    ````sql
+    copy disciplinas (id_disciplina, nome, ementa)
+    from 'C:\disciplinas.csv'
+    delimiter ','
+    csv header;
+    ````
+- **Editando e removendo dados**
+    ````sql
+    updade disciplinas set nome = 'biologia'
+    where id_disciplina = 7;
+    ````
+    ````sql
+    delete from disciplinas
+    where id_disciplina = 8;
+    ````
+- **Permissionamento ou Views**
+    - Permissões de acesso de usuários
+    ````sql
+    create view matricula_com_sigila as
+    (
+        select 
+            id_matricula,
+            id_aluno,
+            validade
+        from matricula
+    )
+- **Índices**
+    ````sql
+    create index idx_nome on disciplinas(nome);
+    ````
+### Cloud Computing
 - ****
     - 
     - 
