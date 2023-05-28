@@ -182,9 +182,17 @@
     create index idx_nome on disciplinas(nome);
     ````
 ### Cloud Computing
-- ****
-    - 
-    - 
-    - 
+- **Cloud Computing:** é a ideia de fazer um compartilhamento de recursos e a utilização dele sob demanda. 
+- **Data Center:** É um local onde servidores de alta performance são armazenados e processam dados.
+- **O que é a nuvem pública?** Refere-se a um modelo de nuvem no qual todos os recursos estão disponíveis na web e compartilhados entre vários usuários, proporcionando padronização e economia de custos. É recomendado para empresas que desejam manter um orçamento mais baixo.
+- **Hypervisor** É um software que virtualiza recursos de hardware, como processamento, memória e armazenamento, permitindo que sejam utilizados por máquinas virtuais.
+- **IaaS(Infrastructure as a Service)**  É um serviço de computação em nuvem que oferece recursos de infraestrutura, como processamento, armazenamento e rede.
+- **PaaS(Platform as a Service)** É um serviço de computação em nuvem que fornece recursos para criar, hospedar e gerenciar aplicativos na nuvem. No modelo PaaS, as empresas contratam um ambiente completo de desenvolvimento, permitindo a criação, modificação e otimização de softwares e aplicações.
+- **SaaS(Software as a Service)** É um serviço de computação em nuvem que disponibiliza softwares e aplicativos para usuários acessarem de qualquer lugar do mundo, desde que tenham conexão com a internet.
+- **Serverless** É um modelo de computação em nuvem no qual o provedor aloca recursos de máquina conforme a demanda, cuidando dos servidores em nome dos clientes.
+- **On-site** faço o gerenciamento de todos os recursos de infraestrutura, como servidores, armazenamento e rede, dentro da minha empresa.
+
+
+
 
 
